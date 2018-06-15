@@ -1,20 +1,24 @@
-body {
+body {  
+
+  background: #edeff0;
+  background-image: url('../svgs/background.svg');
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  
 }
 
 #container {
+  padding:0 5%;
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
   height: 100%; /* new line */
   width: 85%;
-  padding-left: 5%;
+  
 }
 
 p {
@@ -41,6 +45,7 @@ header {
 header nav {
   padding-bottom: 50px;
   text-align: left;
+
 }
 
 header nav ul li {
@@ -68,6 +73,7 @@ footer {
 /*------------Navigation------------------*/
 
 .nav{
+  margin: 20px 0;
   display: flex;
   flex-direction: row;
   color: #39add1;
@@ -88,34 +94,54 @@ footer {
   margin-top: 35px;
 }
 
+.heading{
+  color: rgb(186, 128, 88);
+  display: none;
+}
+
 .svg__logo{
-  margin-top: 40px;
-  width: 35%;
+  
+  width: 140px;
+  height: 120px;
 }
 
 .sable{
   fill: #b97f5b;
+  color: #b97f5b;
 }
 .red{
   fill: #7C4D30;
+  color: #7C4D30;
 }
 .stone {
   fill: #52595F;
+  color: #52595F;
 }
 .fawn {
   fill: #E1AC88;
+  color: #E1AC88;
 }
 
 .dogs__lot{
+  padding-top: 20px;
   width: 90%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  
+
 }
 .dog__name{
-  margin-top: 10px;
+  margin-top:0;
   text-align: center;
 
+}
+
+@media (max-width:420px){
+  .st1{
+  display: none;
+  }
+  .heading{
+  display: block;
+  }
 }
