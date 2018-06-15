@@ -13,6 +13,8 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%; /* new line */
+  width: 85%;
+  padding-left: 5%;
 }
 
 p {
@@ -50,8 +52,10 @@ main {
   padding-top: 50px;
 }
 
-main h2 {
-  font-size: 28px;
+h1,
+h2 {
+  font-size: 23px;
+  font-weight: 600;
 }
 
 footer {
@@ -66,4 +70,52 @@ footer {
 .nav{
   display: flex;
   flex-direction: row;
+  color: #39add1;
+  font-weight:  600;
+}
+
+.nav__item{
+  display: flex;
+  align-items: center;
+}
+
+.nav__item span{
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.nav__tittle{
+  margin-top: 35px;
+}
+
+.svg__logo{
+  margin-top: 40px;
+  width: 35%;
+}
+
+.sable{
+  fill: #b97f5b;
+}
+.red{
+  fill: #7C4D30;
+}
+.stone {
+  fill: #52595F;
+}
+.fawn {
+  fill: #E1AC88;
+}
+
+.dogs__lot{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.dog__name{
+  margin-top: 10px;
+  text-align: center;
+
 }
