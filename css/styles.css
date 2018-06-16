@@ -1,5 +1,10 @@
-body {  
+/*------------Global Styles------------------*/
 
+* {
+  box-sizing: border-box;
+}
+
+body {  
   background: #edeff0;
   background-image: url('../svgs/background.svg');
   margin: 0;
@@ -7,8 +12,7 @@ body {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  color: #111;
-  
+  color: #111;  
 }
 
 #container {
@@ -17,8 +21,7 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%; /* new line */
-  width: 85%;
-  
+  width: 78%;  
 }
 
 p {
@@ -45,7 +48,6 @@ header {
 header nav {
   padding-bottom: 50px;
   text-align: left;
-
 }
 
 header nav ul li {
@@ -80,12 +82,12 @@ footer {
   font-weight:  600;
 }
 
-.nav__item{
+.nav__icon{
   display: flex;
   align-items: center;
 }
 
-.nav__item span{
+.nav__icon span{
   margin-right: 15px;
   margin-left: 5px;
 }
@@ -94,16 +96,21 @@ footer {
   margin-top: 35px;
 }
 
+
+/*------------SVG LOGO------------------*/
+
+
 .heading{
   color: rgb(186, 128, 88);
   display: none;
 }
 
-.svg__logo{
-  
+.svg__logo{  
   width: 140px;
   height: 120px;
 }
+
+/*------------SVG CORGI------------------*/
 
 .sable{
   fill: #b97f5b;
@@ -134,14 +141,71 @@ footer {
 .dog__name{
   margin-top:0;
   text-align: center;
-
 }
 
-@media (max-width:420px){
+
+/*------------SVG LOGO ANIMATION------------------*/
+
+.st2{
+  transform-origin: 50px 50px;
+}
+
+.svg__logo:hover .st2{
+  animation: logo 1s ease-out;
+}
+@keyframes logo {
+ 20% {
+    transform: scale(.9) ;
+  }
+  50% {
+    transform: scale(1.1) ;
+  }
+  70% {
+    transform: scale(.9) ;
+  }
+  100% {
+    transform: scale(1) ;
+  }
+}
+
+
+/*------------SVG ICON ANIMATION------------------*/
+
+.li__icon{
+  transform-origin: 28px 24px;
+}
+.nav__icon:hover {
+  animation: scale .5s ease-out;
+  color: #7C4D30;
+}
+.nav__icon:hover .li__icon{
+  fill: #7C4D30;  
+}
+@keyframes scale{
+  0% {
+    transform: scale(1);  
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/*------------Breakpoints------------------*/
+
+.heading{
+  display: block;
+  }
   .st1{
-  display: none;
+    display: none;
+  }
+@media (min-width:420px){
+  .st1{
+    display: inherit;
   }
   .heading{
-  display: block;
+  display: none;
   }
 }
